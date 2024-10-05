@@ -20,7 +20,7 @@ async def app(scope, receive, send) -> None:
 
         case "fibonacci":
             if len(path_nodes) <= 2:
-                await send_error(422)
+                await send_error(422, send)
                 return
 
             await send_fibonacci(path_nodes[2], send)
