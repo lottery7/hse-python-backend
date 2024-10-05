@@ -1,5 +1,4 @@
 # Запуск
 ```
-pip install -r requirements.txt
-uvicorn hw1.main:app
+poetry run pytest -vv --strict --showlocals .\tests\test_homework_1.py
 ```
