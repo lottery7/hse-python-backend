@@ -136,4 +136,8 @@ def delete_item(id: int) -> bool:
     if id not in _items:
         return False
     _items[id].deleted = True
+    for cart in _carts.values():
+        for item in cart.items:
+            if item.id == id:
+                item.available = False
     return True
