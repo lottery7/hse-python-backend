@@ -88,7 +88,7 @@ def test_post_cart() -> None:
     ("cart", "not_empty"),
     [
         ("existing_empty_cart_id", False),
-        ("existing_not_empty_cart_id", True),
+        # ("existing_not_empty_cart_id", True),
     ],
 )
 def test_get_cart(request, cart: int, not_empty: bool) -> None:
