@@ -32,7 +32,7 @@ async def get_pokemon_list(
         HTTPStatus.NOT_FOUND: {
             "description": "Failed to return requested pokemon as one was not found",
         },
-    },
+    },  
 )
 async def get_pokemon_by_id(id: int) -> PokemonResponse:
     entity = store.get_one(id)
