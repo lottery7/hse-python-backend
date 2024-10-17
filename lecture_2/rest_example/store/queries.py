@@ -1,4 +1,4 @@
-from typing import Iterable
+from typing import Iterable, Iterator
 
 from lecture_2.rest_example.store.models import (
     PatchPokemonInfo,
@@ -9,7 +9,7 @@ from lecture_2.rest_example.store.models import (
 _data = dict[int, PokemonInfo]()
 
 
-def int_id_generator() -> Iterable[int]:
+def int_id_generator() -> Iterator[int]:
     i = 0
     while True:
         yield i
