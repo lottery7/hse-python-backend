@@ -5,7 +5,6 @@ from ...store import queries as store
 from ...store.models import *
 from .contracts import *
 
-
 router = APIRouter(prefix="/cart")
 
 
